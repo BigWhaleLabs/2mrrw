@@ -1,6 +1,6 @@
 {
-  "name": "frontend-starter",
-  "version": "1.0.0",
+  "name": "2mrrw",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start": "yarn generate-css-types && vite",
@@ -8,7 +8,7 @@
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src",
     "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts && prettier --write src/classnames/tailwind.ts",
-    "update": "yarn build && rm -r docs && cp -r dist docs && git add . && git commit -m 'update' && git push",
+    "update": "yarn build && git add . && git commit -m 'update' && git push",
     "preview": "yarn build && yarn vite preview"
   },
   "browserslist": {
@@ -25,9 +25,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^2.1.0",
-    "preact": "^10.11.1",
-    "unfetch": "^4.2.0",
-    "valtio": "^1.7.2"
+    "preact": "^10.11.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.4.0",
@@ -44,7 +42,6 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-    "eslint-plugin-valtio": "^0.6.1",
     "postcss": "^8.4.17",
     "prettier": "^2.7.1",
     "react-scripts": "^5.0.1",
@@ -55,5 +52,5 @@
     "vite": "^3.1.7",
     "vite-tsconfig-paths": "^3.5.1"
   },
-  "packageManager": "yarn@3.2.3"
+  "packageManager": "yarn@3.2.4"
 }
